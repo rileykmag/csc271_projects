@@ -1,0 +1,40 @@
+body{
+    background-color: lightskyblue;
+    font-family: "Monaco", "Arial";
+}
+
+h1 {
+    text-align: center;
+    color:midnightblue;
+    font-size: 45px;
+}
+h2, h3, strong {
+    color:midnightblue;
+}
+
+p {
+    font-size: 15px;
+    color:midnightblue;
+}
+
+#pagelink{
+    font-size: 23px;
+}
+
+ul.links{
+    font-size: 20px;
+    color:midnightblue;
+}
+
+a:link{
+    color:midnightblue;
+}
+
+a:visited{
+    color:rebeccapurple;
+}
+
+a:hover{
+    color:cornflowerblue;
+}
+
