@@ -17,7 +17,11 @@ p {
     color:midnightblue;
 }
 
-#pagelink{
+#feature{
+    color: midnightblue;
+}
+
+a.pagelink{
     font-size: 23px;
 }
 
