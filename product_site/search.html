@@ -10,8 +10,8 @@
 <body>
     <h1>TicTrack Search Page</h1>
 
-    <a href="index.html" id="pagelink">Home</a><br/>
-    <a href="account.html" id="pagelink">View Account</a><br/>
+    <a href="index.html" class="pagelink">Home</a><br/>
+    <a href="account.html" class="pagelink">View Account</a><br/>
 
     <p>
         Use the search feature to look up any events, artists, or games near you!
@@ -22,13 +22,13 @@
 
     <form action="search.html" method="post">
         <label for="search">Search:</label><br/>
-        <input type="text" name="search"><br/>
+        <input type="text" id="search" name="search"><br/>
 
         <label for="location">Location:</label><br/>
-        <input type="text" name="location"><br/>
+        <input type="text" id="location" name="location"><br/>
 
         <label for="date">Date:</label><br/>
-        <input type="date" name="date"><br/>
+        <input type="date" id="date" name="date"><br/>
 
         <input type="submit" value="Submit">
     </form>
