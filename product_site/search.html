@@ -40,3 +40,43 @@
 </body>
 
 </html>
+    <div class="header">
+        <img src="images/logo.png" alt="TicTrack Logo"> 
+        <h1>TicTrack</h1>
+        <h2>TicTrack Search Page</h2>
+
+        <a class="active" href="search.html" class="pagelink">Search</a>
+        <a href="myevents.html" class="pagelink">My Events</a>
+        <a href="account.html" class="pagelink">My Account</a>
+        <a href="index.html" class="pagelink">Home</a>
+    </div>
+
+    <div class="content">
+        <p>
+            Use the search feature to look up any events, artists, or games near you!
+            Select the event or artist you would like to see, and then select the location 
+            and date that you would like to attend. Once you have selected these options,
+            you will be able to compare the prices of these tickets across several platforms.
+        </p>
+
+        <form action="search.html" method="post">
+            <label for="search">Search:</label><br/>
+            <input type="text" id="search" name="search"><br/>
+
+            <label for="location">Location:</label><br/>
+            <input type="text" id="location" name="location"><br/>
+
+            <label for="date">Date:</label><br/>
+            <input type="date" id="date" name="date"><br/>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="img-column">
+        <img class="img-right" src="images/search.jpeg" alt="Search photo">
+    </div>
+
+</body>
+
+</html>
