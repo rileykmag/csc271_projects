@@ -3,12 +3,26 @@
 
 <head>
     <title>TicTrack Home</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-    <h1><img src="images/logo.png" alt="TicTrack Logo"> TicTrack</h1>
-    <h2>Track ticket prices across several sources with TicTrack!</h2>
+    <div class="header">
 
+        <img src="images/logo.png" alt="TicTrack Logo">
+        <h1>TicTrack</h1>
+        <h2>Track ticket prices across several sources with TicTrack!</h2>
+
+        <div>
+            <a href="search.html">Search</a>
+            <a href="myevents.html">My Events</a>
+            <a href="account.html">My Account</a>
+            <a class="active" href="index.html">Home</a>
+        </div>
+        
+    </div>
+
+    <div class="content">
     <p>
         <strong>TicTrack</strong> is a product meant to help users obtain more affordable tickets to events.
         Ticket buying can be a hassle, especially with how <em>competitive</em> sales have been as of late, 
@@ -28,55 +42,53 @@
         where it will provide predictions on when ticket prices will drop, so users will have a higher 
         chance at securing more affordable tickets. 
     </p>
+    </div>
 
-    <a href="account.html">View Account</a><br/>
+    <div class="content">
+        <iframe class="vid-center" width="520" height="345" src="https://www.youtube.com/embed/LaN_fZhFOxY"></iframe>
+    </div>
 
-    <br/>
+    <div class="content">
+        <div style="text-align: center;">
+            <table style="margin: 0 auto;">
+            <tr>
+                <th>Event</th>
+                <th>Location</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Concert</td>
+                <td>Providence, RI</td>
+                <td>10/15/2024</td>
+            </tr>
+            <tr>
+                <td>Comedy Show</td>
+                <td>Boston, MA</td>
+                <td>10/20/2024</td>
+            </tr>
+            <tr>
+                <td>Play</td>
+                <td>New York City, NY</td>
+                <td>10/25/2024</td>
+            </tr>
+            </table>
+        </div>
 
-    <img src="images/crowd.jpg" alt="Crowd">
-    <img src="images/singer.jpg" alt="Singer">
+        <br/>
+        <h3>Features:</h3>
+        <ul>
+            <li>Search for events</li>
+            <li>Select tickets</li>
+            <li>Compare prices</li>
+            <li>Get alerts for price changes</li>
+            <li>Receive predictions on price drops</li>
+        </ul>
+    </div>
 
-    <br/>
-        <iframe width="520" height="345" src="https://www.youtube.com/embed/LaN_fZhFOxY"></iframe>
-    <br/>
-
-    <table>
-        <tr>
-            <th>Event</th>
-            <th>Location</th>
-            <th>Date</th>
-        </tr>
-        <tr>
-            <td>Concert</td>
-            <td>Providence, RI</td>
-            <td>10/15/2024</td>
-        </tr>
-        <tr>
-            <td>Comedy Show</td>
-            <td>Boston, MA</td>
-            <td>10/20/2024</td>
-        </tr>
-        <tr>
-            <td>Play</td>
-            <td>New York City, NY</td>
-            <td>10/25/2024</td>
-        </tr>
-    </table>
-
-    <br/>
-
-    <h3>Features:</h3>
-    <ul>
-        <li>Search for events</li>
-        <li>Select tickets</li>
-        <li>Compare prices</li>
-        <li>Get alerts for price changes</li>
-        <li>Receive predictions on price drops</li>
-    </ul>
-
-    <br/>
-
-    <a href="index.html">Home</a><br/>
+    <div class="img-column">
+        <img class="right" src="images/crowd.jpg" alt="Crowd">
+        <img class="right" src="images/singer.jpg" alt="Singer">
+    </div>
 
     <h3>Ticket Browsers:</h3>
     <ul>
@@ -85,7 +97,6 @@
         <li><a href="https://www.vividseats.com/" target="_blank">Vivid Seats</a></li>
     </ul>
 
-    <br/>
 
     <p><em>Author Details: Riley Maguire, <a href="mailto:riley_magure@uri.edu">riley_maguire@uri.edu</a></em></p>
     
