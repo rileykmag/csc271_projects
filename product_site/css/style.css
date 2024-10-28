@@ -8,17 +8,13 @@ h1 {
     color:midnightblue;
     font-size: 45px;
 }
-h2, h3, strong {
+h2, h3, h4, strong {
     color:midnightblue;
 }
 
 p {
     font-size: 15px;
     color:midnightblue;
-}
-
-#feature{
-    color: midnightblue;
 }
 
 a.pagelink{
@@ -62,6 +58,27 @@ a:hover{
 .header a.active {
     color: white;
     background-color: darkblue;
+}
+.results {
+    float: left;
+    width: 70%;
+    background-color:aliceblue;
+    margin: auto;
+    padding: 20px;
+    visibility: visible;
+}
+
+#backLink {
+    float: left;
+    text-decoration: underline;
+}
+
+#listResults{
+    text-decoration:underline;
+}
+
+.resultNum{
+    font-style: italic;
 }
 
 .content{
