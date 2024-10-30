@@ -1,6 +1,6 @@
 var favMovies = ["Scarface", "Dirty Dancing", "Toy Story"];
 var urls = ["https://upload.wikimedia.org/wikipedia/en/7/71/Scarface_-_1983_film.jpg","https://upload.wikimedia.org/wikipedia/en/0/00/Dirty_Dancing.jpg", "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg"];
-var htmls = ["scarface.html", "dirty-dancing.html", "toy-story.html"];
+var htmls = ["https://afriasv.rhody.dev/csc271_projects/labs/lab8_uri_mdb-main/scarface.html", "dirty-dancing.html", "toy-story.html"];
 var ratings = [4, 5, 3];
 
 
