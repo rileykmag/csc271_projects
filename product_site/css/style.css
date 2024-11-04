@@ -59,6 +59,13 @@ a:hover{
     color: white;
     background-color: darkblue;
 }
+
+.filter {
+    float: right;
+    display: flex;
+    align-items: right;
+}
+
 .results {
     float: left;
     width: 70%;

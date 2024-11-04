@@ -25,13 +25,26 @@
     </div>
 
     <div class="results">
+        <div class="filter">
+
+            <!-- Filter label and dropdown to filter reviews by rating -->
+            <label for="price-filter">Filter by price:</label>
+            <select id="price-filter">
+                <!-- Filter options for each rating level and 'All' option -->
+                <option value="All">All</option>
+                <option value="6000">$6k+</option>
+                <option value="5000">$5-6k</option>
+                <option value="4000">$4-5k</option>
+                <option value="3000">$3-4k</option>
+                <option value="2000">$2k & under</option>
+            </select>
+        </div>
 
         <h3 id="listResults"></h3>
-        <h4 class="resultNum">Number of results shown: </h4>
-        <p><strong>Event 1: </strong></p>
-        <p><strong>Event 2: </strong></p>
-        <p><strong>Event 3: </strong></p>
-
+        <h4 class="resultNum"></h4>
+        <p data-rating="0"><strong>Event 1: </strong></p>
+        <p data-rating="0"><strong>Event 2: </strong></p>
+        <p data-rating="0"><strong>Event 3: </strong></p>
         
     </div>
 
