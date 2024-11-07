@@ -1,34 +1,42 @@
+// display Search Results with a function
+// get the h2 element by its tag name and change the text content to "Search Results"
+function displaySearchTitle(){
+    var results = document.querySelectorAll('h2');
+    results[0].textContent = "Search Results";
+}
+
+// call the function to display the search results (no parameters or return)
+displaySearchTitle();
+
 // Declaring variables
 // lists for multiple locations and keywords
 var searched = ["Taylor Swift", "concert", "North America"];
 var locations = ["Miami, FL", "New Orleans, LA", "Indianapolis, IN"]
+var dates = ["October 19th", "November 26th", "December 2nd"];
 
-// string variables to store the months
-var month1 = "October";
-var month2 = "November"
-
-// int variables to store the dates
-var dateMIAMI = 19;
-var dateNOLA = 26;
-var dateIND = 2;
+// create a function to calculate the average price
+function average(highNum, lowNum, total){
+    var result = (highNum + lowNum) / total; // add the high and low and then divide by the total
+    return result;
+}
 
 // int variables for Miami pricing
 // variables store high/low prices and then calculate average price
 var highpriceMIAMI = 5000;
 var lowpriceMIAMI = 2000;
-var avgMIAMI = ((highpriceMIAMI + lowpriceMIAMI) / 2)
+var avgMIAMI = average(highpriceMIAMI, lowpriceMIAMI, 2); // call the function to calculate the average price of Miami
 
 // int variables for New Orleans pricing
 // variables store high/low prices and then calculate average price
 var highpriceNOLA = 4000;
 var lowpriceNOLA = 2100;
-var avgNOLA = ((highpriceNOLA + lowpriceNOLA) / 2)
+var avgNOLA = average(highpriceNOLA, lowpriceNOLA, 2); // call the function to calculate the average price of New Orleans
 
 // int variables for Indianapolis pricing
 // variables store high/low prices and then calculate average price
 var highpriceIND = 7000;
 var lowpriceIND = 3000;
-var avgIND = ((highpriceIND + lowpriceIND) / 2)
+var avgIND = average(highpriceIND, lowpriceIND, 2); // call the function to calculate the average price of Indianapolis
 
 //store averages in a list
 var avgPrices = [avgMIAMI, avgNOLA, avgIND];
@@ -47,9 +55,19 @@ for(let i = 0; i < searched.length; i++){
 // get the events by the p-tag
 // update each event to reflect location/matching date
 var events = document.getElementsByTagName('p');
-events[0].innerHTML += searched[0] + " at " + locations[0] + " on " + month1 + " " + dateMIAMI + "th";
-events[1].innerHTML += searched[0] + " at " + locations[1] + " on " + month1 + " " + dateNOLA + "th";
-events[2].innerHTML += searched[0] + " at " + locations[2] + " on " + month2 + " " + dateIND + "nd";
+
+// make this into a function, otherwise it was 3 lines of same code
+// function takes in search, location, and date, returns a string that contains them all
+function updateEvent(search, location, date){
+    var update = search + " at " + location  + " on " + date;
+    return update;
+}
+
+// call the function for each event
+for(let i = 0; i < locations.length; i++){
+    events[i].innerHTML = updateEvent(searched[0], locations[i], dates[i]);
+}
+
 
 // adding avg prices (calculations from above) by p query-selector
 // use innerHTML to add pricing to end
