@@ -94,8 +94,13 @@ total[0].textContent = "Number of results shown: " + locations.length + " result
 // get the dropdown element for filtering prices by its ID
 var filterDropdown = document.getElementById('price-filter');
 
-filterDropdown.addEventListener('change', function() {
 
+// FILTER FUNCTION
+// create a function to filter the prices
+// iterate through the pricing array
+// store the currently selected rating from the dropdown
+// display corresponding prices based on the selected dropdown value
+function filterSwap(){
     answers = 0;
     // Store the currently selected rating from the dropdown
     var selected_price = filterDropdown.value;
@@ -108,13 +113,16 @@ filterDropdown.addEventListener('change', function() {
             pricing[i].style.display = "block";
             answers++;
         }
+        // if the selected price is less than the average price
         else if(selected_price <= num && selected_price >= num-1000){
             pricing[i].style.display = "block";
             answers++;
         }
+        // if the selected price is greater than the average price
         else if(selected_price >= num + 1000){
             pricing[i].style.display = "none";
         }
+        // if the selected price is not within the range of the average price
         else{
             pricing[i].style.display = "none";
         }
@@ -127,7 +135,10 @@ filterDropdown.addEventListener('change', function() {
     else{
         total[0].textContent = "Number of results shown: " + answers + " results";
     }
-});
+}
+
+// add an event listener to the dropdown to call the filter function when the value changes
+filterDropdown.addEventListener('change', filterSwap);
 
 
 
