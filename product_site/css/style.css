@@ -89,6 +89,7 @@ a:hover{
 }
 
 .content{
+    border-radius: 25px;
     float: left;
     width: 70%;
     background-color:aliceblue;
